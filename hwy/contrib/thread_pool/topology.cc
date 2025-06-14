@@ -601,6 +601,7 @@ std::vector<size_t> ExpandList(const char* list, size_t list_end,
 
   // Parse all [first-]last separated by commas.
   for (;;) {
+  	HWY_WARN("%s", list);
     // Single number or first of range: ends with dash, comma, or end.
     const size_t lp_range_first = parse_lp(HWY_MIN(find('-'), find(',')));
 
