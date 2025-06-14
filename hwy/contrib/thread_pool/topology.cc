@@ -592,7 +592,7 @@ std::vector<size_t> ExpandList(const char* list, size_t list_end,
       lp = HWY_MIN(lp, max_lp);
     }
 	if (lp  > max_lp) {
-		HWY_WARN("%zu is larger than max %zu", lp, max_lp);
+		printf("%zu is larger than max %zu", lp, max_lp);
 		HWY_ASSERT(false);
 	}
 
